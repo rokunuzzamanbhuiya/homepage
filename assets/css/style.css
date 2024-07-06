@@ -31,6 +31,7 @@ html {
 body {
     position: relative;
     font-family: 'Switzer-Regular';
+    background: #1B3936;
 }
 
 .container {
@@ -83,7 +84,8 @@ body {
 
 /* Hero Area */
 .hero-area {
-    background: #1B3936;
+    background: url("../img/hero/hero-main-bg.png") no-repeat center center / cover;
+    display: block;
     overflow: hidden;
 }
 
@@ -195,7 +197,6 @@ body {
     font-size: 24px;
 }
 
-
 .info-right p {
     color: #1B3936;
     font-size: 24px;
@@ -212,4 +213,75 @@ body {
     color: #1B3936;
     font-size: 24px;
     padding-left: 10px;
+}
+
+/* BG Image Area */
+.bg-image-area img {
+    width: 100%;
+    height: auto;
+}
+
+/* About Area */
+.about-area {
+    z-index: 1;
+    position: relative;
+    padding-top: 230px;
+    padding-bottom: 460px;
+    background: url("../img/about/about-bg.png") no-repeat center center / cover;
+    display: block;
+    overflow: hidden;
+}
+
+
+.container-about {
+    position: relative;
+    background-image: radial-gradient(circle, #1b393690 60%, #1b393616 80%, #1b393600 100%);
+}
+
+.container-about .about-img1 {
+    position: absolute;
+    top: 6.6%;
+    left: -6.8%;
+    z-index: -1;
+}
+
+.container-about .about-img2 {
+    position: absolute;
+    top: -18%;
+    right: -6%;
+    z-index: -1;
+}
+
+.container-about .about-img3 {
+    position: absolute;
+    left: 2%;
+    bottom: -35%;
+    z-index: -1;
+}
+
+.container-about .about-img4 {
+    position: absolute;
+    right: 2%;
+    bottom: -35%;
+    z-index: -1;
+}
+
+.about-title p {
+    text-align: center;
+    color: #75FF69;
+    font-size: 24px;
+    font-family: 'Switzer-Regular';
+}
+
+.about-content p {
+    text-align: center;
+    color: #678784;
+    font-size: 68px;
+    font-family: 'Boska-Regular';
+    text-transform: capitalize;
+    padding: 5px 44px;
+}
+
+.about-content p span {
+    color: #ffffff;
 }
