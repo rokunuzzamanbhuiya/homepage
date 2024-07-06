@@ -175,3 +175,41 @@ body {
     display: block;
     padding: 35px;
 }
+
+/* Info Area */
+.info-area {
+    padding-top: 108px;
+    padding-bottom: 122px;
+    background: #F9F9F9;
+}
+
+.info-area-div {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.info-left p {
+    padding: 38px 300px 0 0;
+    font-size: 24px;
+}
+
+
+.info-right p {
+    color: #1B3936;
+    font-size: 24px;
+}
+
+.info-right h2 {
+    font-family: 'Boska-Bold';
+    color: #1B3936;
+    font-size: 100px;
+}
+
+.info-right h2 span {
+    font-family: 'Switzer-Regular';
+    color: #1B3936;
+    font-size: 24px;
+    padding-left: 10px;
+}
