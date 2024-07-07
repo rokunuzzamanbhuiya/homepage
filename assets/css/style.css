@@ -406,6 +406,16 @@ body {
     display: block;
     margin-left: 110px;
     transform: translateY(-36%);
+    transition: .3s;
+}
+
+.rooms-hover-btn a:hover svg {
+    -webkit-animation: 0.3s toLeftFromRight forwards;
+    animation: 0.3s toLeftFromRight forwards;
+}
+
+.rooms-hover-btn a:hover svg path {
+    stroke: #75FF69;
 }
 
 /* CTA Area */
@@ -521,4 +531,191 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+
+/* Testimonial Area */
+.testimonial-area {
+    z-index: 1;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 76px;
+    background: #F9F9F9;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.testimonial-title h2 {
+    color: #1B3936;
+    font-size: 68px;
+    font-family: 'Boska-Regular';
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.testimonial-title p {
+    color: #1B3936;
+    font-size: 18px;
+    font-family: 'Switzer-Regular';
+    font-weight: 400;
+}
+
+.container-testimonial {
+    margin-top: 180px;
+}
+
+.testimonial-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 104px;
+    padding-left: 240px;
+}
+
+.testimonial-content {
+    position: relative;
+}
+
+.testimonial-hover-content {
+    position: absolute;
+    bottom: 20px;
+    left: -78px;
+
+    background: #ffffff;
+    padding: 25px 45px 25px 25px;
+}
+
+.testimonial-hover-content h5 {
+    color: #1B3936;
+    font-size: 22px;
+    font-family: 'Switzer-Regular';
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+
+.testimonial-hover-content p {
+    color: #1B3936;
+    font-size: 16px;
+    font-family: 'Switzer-Regular';
+    font-weight: 400;
+    margin-top: 4px;
+    background: -webkit-linear-gradient(#1B3936, #1b39360e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.testimonial-hover-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 120px;
+}
+
+.testimonial-hover-btn a {
+    position: relative;
+    background: #1B3936;
+    width: 60px;
+    height: 60px;
+    line-height: 70px;
+    border-radius: 100%;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    transition: .3s;
+}
+
+.testimonial-hover-btn a:hover {
+    background: #75FF69;
+}
+
+.testimonial-hover-btn a:hover svg {
+    -webkit-animation: 0.3s toLeftFromRight forwards;
+    animation: 0.3s toLeftFromRight forwards;
+}
+
+.testimonial-hover-btn a:hover svg path {
+    stroke: #1B3936;
+}
+
+@-webkit-keyframes toLeftFromRight {
+    49% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes toLeftFromRight {
+    49% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+
+
+/* Footer Area */
+.footer-top {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #ffffff;
+}
+
+.footer-top-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left h2 {
+    color: #1B3936;
+    font-size: 68px;
+    font-family: 'Boska-Regular';
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.footer-left p {}
+
+.footer-left-btn {
+    margin-top: 50px;
+}
+
+.footer-left-btn a {
+    padding: 10px 40px;
+    border: 1px solid #1B3936;
+    border-radius: 100%;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-left-btn a:hover {
+    border: 1px solid #75FF69;
+    background: #75FF69;
+    color: #1B3936;
 }
