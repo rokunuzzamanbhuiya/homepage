@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
 @font-face {
     font-family: "AvenirNextLTPro-Bold";
@@ -67,6 +67,11 @@ body {
     font-size: 18px;
     font-family: 'Switzer-Regular';
     color: #ffffff;
+    transition: .3s;
+}
+
+.menu-left ul li a:hover {
+    color: #75FF69;
 }
 
 .menu-right ul li {
@@ -80,6 +85,11 @@ body {
     font-size: 18px;
     font-family: 'Switzer-Regular';
     color: #ffffff;
+    transition: .3s
+}
+
+.menu-right ul li a:hover {
+    color: #75FF69;
 }
 
 /* Hero Area */
@@ -181,7 +191,7 @@ body {
 /* Info Area */
 .info-area {
     padding-top: 108px;
-    padding-bottom: 122px;
+    padding-bottom: 150px;
     background: #F9F9F9;
 }
 
@@ -197,22 +207,36 @@ body {
     font-size: 24px;
 }
 
-.info-right p {
-    color: #1B3936;
-    font-size: 24px;
+.info-right-content {
+    margin-bottom: 130px;
 }
 
-.info-right h2 {
+.info-right-content:last-child {
+    margin-bottom: 0;
+}
+
+.info-right-content p {
+    color: #1B3936;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.info-right-content h2 {
     font-family: 'Boska-Bold';
     color: #1B3936;
     font-size: 100px;
+    margin: 0;
+    padding: 0;
+    line-height: .8;
 }
 
-.info-right h2 span {
+.info-right-content span {
     font-family: 'Switzer-Regular';
+    font-weight: 400;
     color: #1B3936;
     font-size: 24px;
-    padding-left: 10px;
+    margin-left: 10px;
 }
 
 /* BG Image Area */
@@ -226,12 +250,18 @@ body {
     z-index: 1;
     position: relative;
     padding-top: 230px;
-    padding-bottom: 460px;
+    padding-bottom: 576px;
     background: url("../img/about/about-bg.png") no-repeat center center / cover;
     display: block;
-    overflow: hidden;
 }
 
+.about-area .about-bg-img {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    display: block;
+}
 
 .container-about {
     position: relative;
@@ -240,14 +270,14 @@ body {
 
 .container-about .about-img1 {
     position: absolute;
-    top: 6.6%;
+    top: 8.8%;
     left: -6.8%;
     z-index: -1;
 }
 
 .container-about .about-img2 {
     position: absolute;
-    top: -18%;
+    top: -15%;
     right: -6%;
     z-index: -1;
 }
@@ -255,14 +285,14 @@ body {
 .container-about .about-img3 {
     position: absolute;
     left: 2%;
-    bottom: -35%;
+    bottom: -32%;
     z-index: -1;
 }
 
 .container-about .about-img4 {
     position: absolute;
     right: 2%;
-    bottom: -35%;
+    bottom: -33%;
     z-index: -1;
 }
 
@@ -271,6 +301,7 @@ body {
     color: #75FF69;
     font-size: 24px;
     font-family: 'Switzer-Regular';
+    padding-bottom: 26px;
 }
 
 .about-content p {
@@ -279,9 +310,101 @@ body {
     font-size: 68px;
     font-family: 'Boska-Regular';
     text-transform: capitalize;
-    padding: 5px 44px;
+    padding: 0 44px;
 }
 
 .about-content p span {
     color: #ffffff;
+}
+
+/* Rooms Area */
+.rooms-area {
+    padding-top: 172px;
+    padding-bottom: 178px;
+    z-index: 1;
+    position: relative;
+    background: #F9F9F9;
+}
+
+.rooms-title h2 {
+    color: #1B3936;
+    font-size: 68px;
+    font-family: 'Boska-Regular';
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.container-rooms {
+    max-width: 1398px;
+    margin: auto;
+}
+
+.rooms-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 145px;
+}
+
+.room-content {
+    position: relative;
+}
+
+.rooms-hover-content {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+}
+
+.rooms-hover-content a {
+    color: #F9F9F9;
+    font-size: 32px;
+    font-family: 'Boska-Regular';
+    font-weight: 400;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.rooms-hover-content a:hover {
+    color: #75FF69;
+}
+
+.rooms-hover-content-two {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.rooms-hover-content-two h2 a {
+    color: #F9F9F9;
+    font-size: 68px;
+    font-family: 'Boska-Black';
+    font-weight: 900;
+    -webkit-text-stroke: 6px white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.rooms-hover-content-two h2 a:hover {
+    color: #75FF69;
+    -webkit-text-stroke: 6px #75FF69;
+}
+
+.rooms-hover-content-two p {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Switzer-Semibold';
+    font-weight: 600;
+    -webkit-text-stroke: 1px white;
+}
+
+.rooms-hover-btn a {
+    display: block;
+    margin-left: 110px;
+    transform: translateY(-36%);
 }
