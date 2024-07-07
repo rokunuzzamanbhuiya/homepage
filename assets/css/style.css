@@ -26,6 +26,7 @@
 html {
     overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -541,6 +542,7 @@ button {
     padding-top: 80px;
     padding-bottom: 76px;
     background: #F9F9F9;
+    overflow: hidden;
 }
 
 .testimonial-header {
@@ -677,12 +679,10 @@ button {
     }
 }
 
-
-
-/* Footer Area */
+/* Footer Area Top */
 .footer-top {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 74px;
+    padding-bottom: 120px;
     background: #ffffff;
 }
 
@@ -698,16 +698,18 @@ button {
     font-family: 'Boska-Regular';
     font-weight: 400;
     text-transform: capitalize;
+    margin-bottom: 6px;
 }
 
 .footer-left p {}
 
 .footer-left-btn {
-    margin-top: 50px;
+    margin-top: 88px;
 }
 
 .footer-left-btn a {
-    padding: 10px 40px;
+    padding: 15px 50px;
+    color: #1B3936;
     border: 1px solid #1B3936;
     border-radius: 100%;
     text-decoration: none;
@@ -718,4 +720,182 @@ button {
     border: 1px solid #75FF69;
     background: #75FF69;
     color: #1B3936;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Footer Area Middle */
+.footer-middle {
+    /* padding: 20px;
+    padding-bottom: 20px; */
+}
+
+.footer-middle-div {
+    display: flex;
+}
+
+.footer-middle-left {
+    background: #75FF69;
+    width: 33.33%;
+}
+
+.footer-middle-left-content {
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 10px;
+}
+
+.footer-middle-left-content h2 {
+    color: #1B3936;
+    font-size: 68px;
+    font-family: 'Boska-Regular';
+    font-weight: 400;
+
+}
+
+.footer-middle-left-content p {
+    position: relative;
+    color: #1B3936;
+    font-size: 16px;
+    font-family: 'Switzer-Regular';
+    font-weight: 400;
+    left: -22px;
+    top: -14px;
+    margin-bottom: 6px;
+}
+
+.footer-middle-left-content a {
+    position: relative;
+    left: 182px;
+    top: -20px;
+}
+
+.footer-middle-left-content a svg path {
+    transition: .3s;
+}
+
+.footer-middle-left-content a:hover svg path {
+    stroke: #ffffff;
+}
+
+.footer-middle-middle {
+    width: 33.33%;
+}
+
+.footer-middle-middle-content {
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 10px;
+}
+
+.footer-middle-middle-content p {
+    position: relative;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Switzer-Regular';
+    font-weight: 400;
+    left: -118px;
+    margin-bottom: 10px;
+}
+
+.footer-middle-middle-content-design {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.footer-middle-middle-content-design h2 {
+    color: #ffffff;
+    font-size: 68px;
+    font-family: 'Boska-Regular';
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+.footer-middle-middle-content a svg path {
+    transition: .3s;
+}
+
+.footer-middle-middle-content a:hover svg path {
+    stroke: #ffffff;
+}
+
+
+.footer-middle-right {
+    width: 33.33%;
+}
+
+.footer-middle-right-content {
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 10px;
+}
+
+.footer-middle-right-content p {
+    position: relative;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Switzer-Regular';
+    font-weight: 400;
+    left: -118px;
+    margin-bottom: 10px;
+}
+
+.footer-middle-right-content-design {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.footer-middle-right-content-design h2 {
+    color: #ffffff;
+    font-size: 68px;
+    font-family: 'Boska-Regular';
+    font-weight: 400;
+    margin-right: 30px;
+}
+
+.footer-middle-right-content a svg path {
+    transition: .3s;
+}
+
+.footer-middle-right-content a:hover svg path {
+    stroke: #ffffff;
+}
+
+/* Footer Area Bottom */
+.footer-bottom {
+    background: #ffffff;
+}
+
+.footer-bottom-div ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-bottom-div ul li {
+    list-style: none;
+    padding: 18px 0;
+    font-size: 18px;
+    font-family: 'Switzer-Regular';
+    font-weight: 400;
+    color: #1B3936;
+}
+
+.footer-bottom-div ul li a {
+    text-decoration: none;
+    color: #1B3936;
+    padding: 0;
+    margin: 0;
+    transition: .3s;
+}
+
+.footer-bottom-div ul li:hover a {
+    color: #75FF69;
 }
