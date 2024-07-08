@@ -13,6 +13,14 @@
 
 <body>
 
+    <!--Preloader Start-->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!--Preloader End -->
+
     <!-- Header Area Start -->
     <header>
         <div id="sticky-header" class="transparent-header">
@@ -22,7 +30,7 @@
                         <div class="menu-left">
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
+                                <li><a href="#about">About</a></li>
                             </ul>
                         </div>
                         <div class="logo-main">
@@ -31,8 +39,8 @@
                         </div>
                         <div class="menu-right">
                             <ul>
-                                <li><a href="#">Cabins</a></li>
-                                <li><a href="#">Reserve</a></li>
+                                <li><a href="#rooms">Cabins</a></li>
+                                <li><a href="#reserve">Reserve</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -105,9 +113,9 @@
         <!-- BG Image Area Start -->
         <section id="bg-image" class="bg-image-area">
             <img src="assets/img/bg-img/bg-img.jpg" alt="Grindelwald">
+            <h2>Welcome To Our Cosy Cabin <br> In The Woods!</h2>
         </section>
         <!-- BG Image Area End -->
-
 
         <!-- About Area Start -->
         <section id="about" class="about-area">
@@ -120,7 +128,7 @@
                     <p>ABOUT US</p>
                 </div>
                 <div class="about-content">
-                    <p>At The <span>Wilderness Retreat</span>, we pride ourselves on offering a <span>peaceful,
+                    <h3>At The <span>Wilderness Retreat</span>, we pride ourselves on offering a <span>peaceful,
                             serene</span>
                         atmosphere that
                         allows our guests to truly
@@ -131,7 +139,7 @@
                         <span>beauty of
                             your
                             surroundings.</span>
-                    </p>
+                    </h3>
                 </div>
             </div>
             <img class="about-bg-img" src="assets/img/rooms/rooms-bg-img.png" alt="Grindelwald">
@@ -201,7 +209,6 @@
         </section>
         <!-- CTA Area End -->
 
-
         <!-- Testimonial Area Start -->
         <section id="testimonial" class="testimonial-area">
             <div class="container">
@@ -247,7 +254,7 @@
                 </div>
             </div>
             <div class="testimonial-hover-btn">
-                <a class="btn-left" href="#"><svg width="25" height="23" viewBox="0 0 25 23" fill="none"
+                <a class="btn-left" href="#0"><svg width="25" height="23" viewBox="0 0 25 23" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M11.7051 1L10.8256 3.7037C9.4058 8.06886 5.56227 11.1988 1 11.7051V11.7051V11.7051C5.53839 12.0984 9.39599 15.1802 10.7819 19.5196L11.7051 22.4101"
@@ -255,7 +262,7 @@
                         <path d="M1.19727 11.7183L24.4 11.7183" stroke="white" stroke-width="2" />
                     </svg>
                 </a>
-                <a class="btn-right" href="#"><svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                <a class="btn-right" href="#0"><svg width="24" height="23" viewBox="0 0 24 23" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M12.695 1L13.5744 3.7037C14.9942 8.06886 18.8378 11.1988 23.4 11.7051V11.7051V11.7051C18.8616 12.0984 15.004 15.1802 13.6181 19.5196L12.695 22.4101"
@@ -270,18 +277,16 @@
     </main>
     <!-- Body Main Wrapper End -->
 
-
     <!-- Footer Area Start -->
     <footer>
-
-        <div class="footer-top">
+        <div id="reserve" class="footer-top">
             <div class="container">
                 <div class="footer-top-div">
                     <div class="footer-left">
                         <h2>it's time to get to know <br> each other!</h2>
                         <p>Grab a cup of coffee and...</p>
                         <div class="footer-left-btn">
-                            <a href="#">Let’s talk!</a>
+                            <a href="#0">Let’s talk!</a>
                         </div>
                     </div>
                     <div class="footer-right">
@@ -290,17 +295,13 @@
                 </div>
             </div>
         </div>
-
         <div class="footer-middle">
-
             <div class="footer-middle-div">
-
-
                 <div class="footer-middle-left">
                     <div class="footer-middle-left-content">
                         <h2>About</h2>
                         <p>Us in a true way</p>
-                        <a href="#">
+                        <a href="#about">
                             <svg width="65" height="65" viewBox="0 0 65 65" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -311,14 +312,12 @@
                         </a>
                     </div>
                 </div>
-
                 <div class="footer-middle-middle">
                     <div class="footer-middle-middle-content">
                         <p>See our</p>
-
                         <div class="footer-middle-middle-content-design">
                             <h2>Rooms</h2>
-                            <a href="#">
+                            <a href="#rooms">
                                 <svg width="65" height="65" viewBox="0 0 65 65" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -330,14 +329,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="footer-middle-right">
                     <div class="footer-middle-right-content">
                         <p>You can</p>
-
                         <div class="footer-middle-middle-content-design">
                             <h2>Contact</h2>
-                            <a href="#">
+                            <a href="#reserve">
                                 <svg width="65" height="65" viewBox="0 0 65 65" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -350,32 +347,23 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-div">
                     <ul>
-                        <li><a href="#">Made by: Azwedo</a></li>
-                        <li><a href="#">Powered by: Webflow</a></li>
-                        <li><a href="#">Change Log</a></li>
-                        <li><a href="#">Style Guide</a></li>
-                        <li><a href="#">Licensing</a></li>
-                        <li><a href="#">Instructions</a></li>
+                        <li>Made by: <a href="#0">Azwedo</a></li>
+                        <li>Powered by: <a href="#0">Webflow</a></li>
+                        <li><a href="#0">Change Log</a></li>
+                        <li><a href="#0">Style Guide</a></li>
+                        <li><a href="#0">Licensing</a></li>
+                        <li><a href="#0">Instructions</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer Area End -->
-
-
-
-
-
-
-
 
     <script src="assets/js/main.js"></script>
 </body>
