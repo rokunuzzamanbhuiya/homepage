@@ -813,11 +813,10 @@ button {
 
 .testimonial-hover-content {
     position: absolute;
-    bottom: 20px;
+    bottom: 16px;
     left: -78px;
-
     background: #ffffff;
-    padding: 25px 45px 25px 25px;
+    padding: 20px 45px 20px 25px;
 }
 
 .testimonial-hover-content h5 {
